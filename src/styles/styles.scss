@@ -1,7 +1,10 @@
 @import './base/settings';
 @import './base/base';
 
+
 .container{
     width: 80%;
     margin:0 auto;
 }
+
+@import './components/App';

@@ -1,0 +1,35 @@
+.flex-container{
+    display: flex;
+}
+
+.persons-name{
+    width: 30%;
+
+    button{
+        display: block;
+    }
+}
+
+.people-details{
+    width: 70%;
+    text-align: center;
+}
+
+
+.list-item{
+    list-style-type: none;
+    width: 20rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin-bottom: 2px;
+    background-color: $second;
+    color: $first;
+    &:hover{
+        background-color: darken($second, 10%);
+        color: lighten($first, 60%);
+    }
+}
+
+.person-selected{
+    background-color: $third;
+}
