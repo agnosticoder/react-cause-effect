@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 
 const Person = ({street, city, state, country, telephone, birthday}) => {
 
-
-
     
     return (
         <div>
