@@ -1,6 +1,4 @@
-
-import faker from 'faker';
-
+import { faker } from '@faker-js/faker';
 
 const people = [
     {
@@ -10,7 +8,7 @@ const people = [
         state: faker.address.state(),
         country: faker.address.country(),
         telephone: faker.phone.phoneNumber(),
-        birthday: faker.date.past().toDateString()
+        birthday: faker.date.past().toDateString(),
     },
     {
         name: faker.name.findName(),
@@ -19,7 +17,7 @@ const people = [
         state: faker.address.state(),
         country: faker.address.country(),
         telephone: faker.phone.phoneNumber(),
-        birthday: faker.date.past().toDateString()
+        birthday: faker.date.past().toDateString(),
     },
     {
         name: faker.name.findName(),
@@ -28,7 +26,7 @@ const people = [
         state: faker.address.state(),
         country: faker.address.country(),
         telephone: faker.phone.phoneNumber(),
-        birthday: faker.date.past().toDateString()
+        birthday: faker.date.past().toDateString(),
     },
     {
         name: faker.name.findName(),
@@ -37,7 +35,7 @@ const people = [
         state: faker.address.state(),
         country: faker.address.country(),
         telephone: faker.phone.phoneNumber(),
-        birthday: faker.date.past().toDateString()
+        birthday: faker.date.past().toDateString(),
     },
     {
         name: faker.name.findName(),
@@ -46,20 +44,20 @@ const people = [
         state: faker.address.state(),
         country: faker.address.country(),
         telephone: faker.phone.phoneNumber(),
-        birthday: faker.date.past().toDateString()
-    }
-]
+        birthday: faker.date.past().toDateString(),
+    },
+];
 
 export const getpeople = (humans) => {
     return new Promise((resolve, reject) => {
-      if(humans){
-          setTimeout(() => {
-            resolve(people);
-          }, 2000)
-      }else{
-          setTimeout(() => reject(new Error("Something went wrong")), 2000);
-      }
-    })
-}
+        if (humans) {
+            setTimeout(() => {
+                resolve(people);
+            }, 2000);
+        } else {
+            setTimeout(() => reject(new Error('Something went wrong')), 2000);
+        }
+    });
+};
 
 export default people;
